@@ -491,3 +491,47 @@ window.addEventListener("resize", () => {
     }
 
 });
+
+
+
+function setupCanvas() {
+    const rect = canvas.getBoundingClientRect();
+    const ratio = window.devicePixelRatio || 1;
+
+    canvas.width = Math.round(rect.width * ratio);
+    canvas.height = Math.round(rect.height * ratio);
+
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+    const gradient = ctx.createLinearGradient(
+        0, 0, rect.width, rect.height
+    );
+
+    gradient.addColorStop(0, "#d6a4ad");
+    gradient.addColorStop(1, "#ae7785");
+
+    ctx.globalCompositeOperation = "source-over";
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, rect.width, rect.height);
+
+    ctx.fillStyle = "#fff4f2";
+    ctx.font = "24px Georgia";
+    ctx.textAlign = "center";
+    ctx.fillText("♡", rect.width / 2, rect.height / 2 - 5);
+
+    ctx.font = "11px Arial";
+    ctx.fillText(
+        "SCRATCH HERE",
+        rect.width / 2,
+        rect.height / 2 + 25
+    );
+
+    ctx.globalCompositeOperation = "destination-out";
+}
+
+// Mobile screen resize
+window.addEventListener("resize", () => {
+    if (!scratched) {
+        setupCanvas();
+    }
+});
