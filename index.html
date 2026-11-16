@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | AQIB & MRS AQIB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="petals-container" id="petals"></div>
+    <div class="light-flash" id="lightFlash"></div>
+    <!-- <div class="petals-container" id="petals"></div> -->
+
+    <!-- ENVELOPE INTRO -->
+    <section id="intro" class="intro">
+        <p class="intro-text">A SPECIAL INVITATION FOR YOU</p>
+
+        <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+
+            <div class="letter">
+                <p>Together with their families</p>
+                <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">MR AQIB
+                    <span>&</span> MRS AQIB
+                </h4>
+                <small>INVITE YOU TO CELEBRATE</small>
+            </div>
+
+            <div class="flap"></div>
+            <div class="left-fold"></div>
+            <div class="right-fold"></div>
+            <div class="bottom-fold"></div>
+
+            <div class="seal">
+                <span class="seal-a">A</span>
+                <span class="seal-amp">&</span>
+                <span class="seal-r">R</span>
+            </div>
+        </div>
+
+        <p class="tap-text">TAP TO OPEN YOUR INVITATION ♡</p>
+    </section>
+
+    <!-- MAIN WEBSITE -->
+    <main id="main">
+
+        <!-- COVER -->
+        <section class="cover">
+            <div class="cover-overlay"></div>
+            <div class="cover-content">
+                <div class="bismillah">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                </div>
+
+                <p class="small-title">THE WEDDING CELEBRATION OF</p>
+
+                <div class="flower">❀</div>
+
+                <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">AQIB <span>&</span> MRS AQIB</h1>
+
+                <p class="cover-description">
+                    Together with their families<br>
+                    request the pleasure of your company
+                </p>
+
+                <div class="cover-date">
+                    17 . 12 . 2026
+                </div>
+
+                <p class="cover-bottom">A BEAUTIFUL BEGINNING OF FOREVER</p>
+            </div>
+            <div class="scroll-down">SCROLL TO EXPLORE ↓</div>
+        </section>
+
+        <!-- INVITATION MESSAGE -->
+        <section class="invitation reveal">
+            <p class="subtitle">WITH LOVE AND BLESSINGS</p>
+            <div class="flower">✿</div>
+
+            <h2>You're Invited</h2>
+
+            <p>
+                With the blessings of our beloved families,
+
+            </p>
+
+
+            <p class="cordially">
+                You are cordially invited to the
+
+                Wedding Ceremony of
+            </p>
+            <h2 class="person-name">Aqib Ali</h2>
+
+            <p class="parent-name">
+                S/O MR. & MRS. M. AKRAM
+            </p>
+            <div class="and-divider">
+                <span></span>
+                &
+                <span></span>
+            </div>
+
+            <!-- BRIDE -->
+            <h2 class="person-name">Mrs Aqib</h2>
+
+            <p class="parent-name">
+                D/O MR. & MRS. MANZOOR AHMED
+            </p>
+
+
+            <!-- <h3>aqib & mrs aqib</h3> -->
+        </section>
+
+        <!-- SCRATCH TO REVEAL -->
+        <section class="scratch-section reveal">
+            <div class="scratch-section">
+                <p class="subtitle">A LITTLE SURPRISE FOR YOU</p>
+                <h2>Scratch to Reveal</h2>
+                <p class="scratch-hint">
+                    Scratch the heart to reveal our special date ♡
+                </p>
+
+                <div class="scratch-container">
+
+                    <svg class="heart-clip" viewBox="0 0 310 280">
+                        <defs>
+                            <clipPath id="heartClip">
+                                <path d="M155 265
+                    C135 247 28 177 28 99
+                    C28 48 91 27 155 91
+                    C219 27 282 48 282 99
+                    C282 177 175 247 155 265 Z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <div class="scratch-container">
+
+                        <svg class="heart-clip" width="0" height="0">
+                            <defs>
+                                <clipPath id="heartClip" clipPathUnits="objectBoundingBox">
+                                    <path d="
+                    M 0.5 0.95
+                    C 0.42 0.88, 0.05 0.62, 0.05 0.34
+                    C 0.05 0.08, 0.32 0.00, 0.5 0.25
+                    C 0.68 0.00, 0.95 0.08, 0.95 0.34
+                    C 0.95 0.62, 0.58 0.88, 0.5 0.95
+                    Z
+                " />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <div class="scratch-message">
+
+                            <div class="flower-decoration">✿ ❀ ✿</div>
+
+                            <div class="big-heart">♥</div>
+
+                            <h3>Save the Date</h3>
+
+                            <p>17 December 2026</p>
+
+                            <div class="flower-decoration bottom-flowers">
+                                ❀ ✿ ❀
+                            </div>
+
+                            <small>WE CAN'T WAIT TO CELEBRATE WITH YOU</small>
+
+                        </div>
+
+                        <div class="celebration" id="celebration"></div>
+
+                        <canvas id="scratchCanvas"></canvas>
+
+
+
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- COUNTDOWN -->
+        <section class="countdown-section reveal">
+            <p class="subtitle">THE BIG DAY IS APPROACHING</p>
+            <h2>Counting Down to Forever</h2>
+
+            <div class="countdown">
+                <div>
+                    <span id="days">00</span>
+                    <small>DAYS</small>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <small>HOURS</small>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <small>MINUTES</small>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <small>SECONDS</small>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- WEDDING FUNCTIONS -->
+        <section class="functions-section reveal">
+
+            <p class="subtitle">THREE DAYS OF CELEBRATION</p>
+            <h2>Wedding Festivities</h2>
+            <p class="functions-intro">
+                Join us to celebrate three beautiful occasions
+                filled with love, happiness and blessings.
+            </p>
+
+            <div class="functions-container">
+
+                <!-- MEHNDI -->
+                <div class="function-card mehndi">
+                    <div class="function-content">
+                        <h3>Mehndi</h3>
+                        <div class="gold-line"></div>
+                        <p class="function-date">16 December 2026</p>
+                        <p class="function-time">TIME: 8:00 pm</p>
+                    </div>
+                </div>
+
+                <!-- BARAT -->
+                <div class="function-card barat">
+                    <div class="function-content">
+                        <h3>Barat</h3>
+                        <div class="gold-line"></div>
+                        <p class="function-date">17 December 2026</p>
+                        <p class="function-time">TIME: 7:00pm </p>
+                        <p class="function-venue">Vip Baldia Lawn Near Govt. Degree Science Girls College  SAEEDABAD,BALDIA TOWN<br>
+                KARACHI</p>
+                    </div>
+                </div>
+
+                <!-- WALIMA -->
+                <div class="function-card walima">
+                    <div class="function-content">
+                        <h3>Walima</h3>
+                        <div class="gold-line"></div>
+                        <p class="function-date">18 December 2026</p>
+                        <p class="function-time">TIME: 8:00 pm</p>
+                        <p class="function-venue">gi</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- VENUE -->
+        <section class="venue reveal">
+            <p class="subtitle">CELEBRATE WITH US</p>
+            <div class="flower">❀</div>
+            <h2>Venue</h2>
+
+            <p class="venue-name">Vip Baldia Lawn Near Govt. Degree Science Girls College</p>
+            <p class="venue-address">
+                SAEEDABAD,BALDIA TOWN<br>
+                KARACHI
+            </p>
+
+            <a href="https://www.google.com/maps/place/VIP+Baldia+Lawn/@24.9231156,66.9633115,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb3153181aef8a3:0x8798ed8d923ca7e4!8m2!3d24.9231108!4d66.9658864!16s%2Fg%2F11bxc41v8k?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="map-button">
+                VIEW ON GOOGLE MAPS
+            </a>
+        </section>
+
+
+
+        <!--ayat   -->
+
+        <!-- QURANIC BLESSINGS SECTION -->
+
+        <section class="quran-section reveal">
+
+            <p class="subtitle">A BLESSING FROM ALLAH</p>
+
+            <div class="quran-flower">
+                <img
+                    src="https://cdn0.weddingwire.com/article/3524/3_2/960/jpg/4253-0-courtney-inghram-floral-design-timeless-wedding-colors.webp">
+            </div>
+
+            <p class="arabic-verse">
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم
+                مِّنْ أَنْفُسِكُمْ أَزْوَاجًا
+                لِّتَسْكُنُوا إِلَيْهَا
+                وَجَعَلَ بَيْنَكُم مَّوَدَّةً
+                وَرَحْمَةً
+            </p>
+
+
+
+            <div class="golden-line"></div>
+
+            <h2>A Beautiful Blessing</h2>
+
+            <p class="urdu-translation">
+                اور اُس کی نشانیوں میں سے ہے کہ اُس نے تمہارے لیے
+                تم ہی میں سے جوڑے پیدا کیے تاکہ تم اُن سے سکون حاصل کرو،
+                اور اُس نے تمہارے درمیان محبت اور رحمت رکھ دی۔
+            </p>
+
+
+
+            <div class="quran-bottom-flower">❀</div>
+
+        </section>
+
+        <!-- end -->
+        <!-- ACCOMMODATION -->
+        <section class="accommodation reveal">
+            <p class="subtitle">FOR OUR DEAR GUESTS</p>
+            <div class="flower">✧</div>
+            <h2>Accommodation</h2>
+
+            <p>
+                For our dear guests travelling from afar, accommodation arrangements have been made to make your stay
+                comfortable.
+
+            </p>
+
+            <p class="hotel-name">Our Family Residence</p>
+            <p>Hyderabad</p>
+        </section>
+
+        <!-- DRESS CODE -->
+        <section class="dress-code reveal">
+            <p class="subtitle">DRESS TO CELEBRATE</p>
+            <div class="flower">✿</div>
+            <h2>Dress Code</h2>
+
+            <p>Traditional & Elegant</p>
+
+            <div class="colors">
+                <span style="background:#d9a5ad"></span>
+                <span style="background:#e8d6c6"></span>
+                <span style="background:#9d7880"></span>
+                <span style="background:#c6aa83"></span>
+            </div>
+        </section>
+
+        <!-- RSVP -->
+        <section class="rsvp reveal">
+            <p class="subtitle">WE HOPE TO SEE YOU</p>
+            <h2>Kindly RSVP</h2>
+
+            <form id="rsvpForm">
+                <input type="text" id="guestName" placeholder="Your Name" required>
+
+                <select id="attendance" required>
+                    <option value="">Will you attend?</option>
+                    <option value="Joyfully Accepts">Joyfully Accepts</option>
+                    <option value="Regretfully Declines">Regretfully Declines</option>
+                </select>
+
+                <input type="number" id="guestCount" min="1" max="10" placeholder="Number of Guests">
+
+                <button type="submit">SEND RESPONSE</button>
+            </form>
+
+            <p id="response"></p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="flower">❀</div>
+            <p>WITH LOVE</p>
+            <h2>AQIB <span>&</span> MRS AQIB</h2>
+            <p>17 . 12 . 2026</p>
+            <small>THANK YOU FOR BEING PART OF OUR STORY</small>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
